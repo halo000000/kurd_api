@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Erbil",
+			"country": {
+				"code": "IQ",
+				"name": "Iraq"
+			},
+			"subdivision": {
+				"code": "AR",
+				"name": "Erbil"
+			},
+			"timezone": "Asia/Baghdad",
+			"latitude": 36.1828,
+			"longitude": 44.0105
+		},
+		"timestamp": 1720541514702
+	}
+}

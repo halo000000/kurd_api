@@ -1,0 +1,18 @@
+{
+  "name": "kurd_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./netlify/functions/api.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
+  }
+}
