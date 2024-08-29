@@ -1,6 +1,6 @@
 const express = require('express');
-const data_boy = require("./api/boy_name_kurish.json");
-const data_gril = require("./api/gril_name_kurish.json");
+const data_boy = require("./boy_name_kurish.json");
+const data_gril = require("./gril_name_kurish.json");
 const serverless = require('serverless-http');
 const router = express.Router();
 
@@ -14,7 +14,7 @@ const port = 3000;
 
 router.get('/', (req, res) => {
 
-res.send('<h1>hi<h1/');
+res.send("base URL for the Api ");
 });
 
 // boy random rout 
@@ -35,6 +35,7 @@ router.get('/random', (req, res) => {
   let random = Math.floor(Math.random()*all_names.length);
   res.json(all_names[random]);
 });
+
 
 // search gril  rout
 router.get("/gril",(req, res)=>{
@@ -68,8 +69,14 @@ router.get("/boy",(req, res)=>{
 }
 })
 
+router.get('/zip', (req, res) => {
+  
+ 
+});
 
-
+router.all('*', (req, res) => {
+  res.status(404).send('<h1> 404 page not found</h1>');
+});
 
 
 // app.listen(port, () => {
